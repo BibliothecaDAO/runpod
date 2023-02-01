@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag realmlord/bibliothecapod:$(date +%s)
+      run: docker build . --file Dockerfile --tag realmlord/bibliothecapod:latest
     -
       name: Login to Docker Hub
       uses: docker/login-action@v2
