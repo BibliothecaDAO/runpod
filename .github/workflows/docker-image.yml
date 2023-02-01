@@ -17,7 +17,7 @@ jobs:
       name: Login to Docker Hub
       uses: docker/login-action@v2
       with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Push the Docker image
       run: docker push realmlord/bibliothecapod:$(date +%s)          
