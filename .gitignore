@@ -1,0 +1,4 @@
+models*/
+*.png
+.env
+!.env.example
